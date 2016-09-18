@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="HealthCheckApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></scrHealthCheckAppipt>
+    <title>Health Check App</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Lunch Checker</h1>
+      <div class="form-group" ng-controller="LunchCheckController">
+        <input placeholder="Enter lunch items.Ex: Salad,Pasta,Yogurt,..."
+        ng-model = "lunchItems" ng-list class="form-control">
+        <button ng-click="checkLunch()">Check if too much</button>
+        <br>
+        {{lunchReport}}
+      </div>
+    <br>
+    </div>
+  </body>
+</html>
