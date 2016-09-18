@@ -12,8 +12,10 @@ function LunchCheckController($scope){
   $scope.lunchReport="";
 
   $scope.checkLunch = function () {
-
-    if($scope.lunchItems.length <= 3){
+    if($scope.lunchItems.length == 0) {
+      $scope.lunchReport="";
+    }
+    else if($scope.lunchItems.length <= 3){
       $scope.lunchReport = "Enjoy!";
     }
     else {
